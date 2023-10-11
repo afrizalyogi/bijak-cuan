@@ -1,11 +1,16 @@
+"use client"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
 export default function Navbar() {
+	const route = usePathname()
 	return (
 		<nav className="navbar navbar-expand-lg fixed-top">
 			<div className="container">
 				<h4>
-					<a className="navbar-brand fw-bold" href="#">
+					<Link className="navbar-brand fw-bold" href={"/"}>
 						Bijakcuan.
-					</a>
+					</Link>
 				</h4>
 				<button
 					className="navbar-toggler"
@@ -17,44 +22,55 @@ export default function Navbar() {
 					aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div className="collapse navbar-collapse gap-2" id="navbarNav">
-					<ul className="navbar-nav ms-auto align-items-center">
+				<div className="collapse navbar-collapse gap-4" id="navbarNav">
+					<ul className="navbar-nav ms-auto align-items-center gap-2">
 						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
+							<Link
+								className={`nav-link ${route === "/" ? "active" : ""}`}
+								aria-current="page"
+								href={"/"}>
 								Beranda
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#">
+							<Link
+								className={`nav-link ${route === "/program" ? "active" : ""}`}
+								href={"/program"}>
 								Program
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#">
+							<Link
+								className={`nav-link ${route === "/event" ? "active" : ""}`}
+								href={"/event"}>
 								Event
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#">
+							<Link
+								className={`nav-link ${route === "/promo" ? "active" : ""}`}
+								href={"/promo"}>
 								Promo
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#">
+							<Link
+								className={`nav-link ${route === "/artikel" ? "active" : ""}`}
+								href={"/artikel"}>
 								Artikel
-							</a>
+							</Link>
 						</li>
 					</ul>
-					<ul className="navbar-nav gap-2 align-items-center">
-						<li className="nav-item">
-							<a className="btn btn-outline-primary" href="#">
+					<ul className="navbar-nav gap-2 mt-2 mt-lg-0 align-items-center">
+						<li className="nav-item w-100">
+							<Link className="btn btn-outline-primary w-100" href={"/masuk"}>
 								Masuk
-							</a>
+							</Link>
 						</li>
-						<li className="nav-item">
-							<a className="btn btn-primary" href="#">
+						<li className="nav-item w-100">
+							<Link className="btn btn-primary w-100" href={"/daftar"}>
 								Daftar
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>

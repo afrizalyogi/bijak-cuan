@@ -1,10 +1,18 @@
+import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+	faTwitter,
+	faInstagram,
+	faWhatsapp,
+	faYoutube,
+} from "@fortawesome/free-brands-svg-icons"
+
 export default function Footer() {
 	return (
-		<footer >
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"></link>
+		<footer className="border-top">
 			<div className="container footer-content">
-				<div className="row justify-content-around">
-					<div className="col">
+				<div className="row gap-5">
+					<div className="col-lg-2">
 						<h4>
 							<a className="fw-bold" href="#">
 								Bijakcuan.
@@ -12,57 +20,50 @@ export default function Footer() {
 						</h4>
 						<p>Pelatihan Keuangan untuk Sukses Finansial</p>
 					</div>
-					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-						<h5 class="">Halaman</h5>
-
-						<ul class="list-unstyled mb-0">
-						<li>
-							<a href="#!" class="text-white">Program</a>
-						</li>
-						<li>
-							<a href="#!" class="text-white">Promo</a>
-						</li>
-						</ul>
+					<div className="col-lg-2">
+						<h6 className="">Halaman</h6>
+						<div className="d-flex flex-column gap-2">
+							<Link href="#">Program</Link>
+							<Link href="#">Promo</Link>
+						</div>
+					</div>
+					<div className="col-lg-2">
+						<h6>Komunitas</h6>
+						<div className="d-flex flex-column gap-2">
+							<Link href="#">Event</Link>
+							<Link href="#">Artikel</Link>
+						</div>
+					</div>
+					<div className="col-lg-2">
+						<h6>Hubungi kami</h6>
+						<div className="d-flex flex-column gap-2">
+							<Link href="#">Pusat Bantuan</Link>
+							<Link href="#">Kontak</Link>
+						</div>
 					</div>
 
-					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-						<h5 class=" ">Komunitas</h5>
-
-						<ul class="list-unstyled">
-						<li>
-							<a href="#!" class="text-white">Event</a>
-						</li>
-						<li>
-							<a href="#!" class="text-white">Artikel</a>
-						</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-2 col-md-6 mb-4  mb-md-0">
-						<h5 class=" ">Hubungi kami</h5>
-
-						<ul class="list-unstyled">
-						<li>
-							<a href="#!" class="text-white">Pusat Bantuan</a>
-						</li>
-						<li>
-							<a href="#!" class="text-white">Kontak</a>
-						</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 ms-5">
-						<h5 class=" ">Media Sosial</h5>
-						<i class="fab fa-twitter fa-lg "></i>
-						<i class="fab fa-instagram  fa-lg mx-3"></i>
-						<i class="fab fa-youtube fa-lg "></i>
-						<i class="fab fa-whatsapp fa-lg  mx-3"></i>
+					<div className="col-lg-2">
+						<h6>Media Sosial</h6>
+						<div className="d-flex flex-row gap-2">
+							<Link href={"#"}>
+								<FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+							</Link>
+							<Link href={"#"}>
+								<FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+							</Link>
+							<Link href={"#"}>
+								<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+							</Link>
+							<Link href={"#"}>
+								<FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div className="border-top">
 				<div className="container">
-					<p className="pt-4 pb-2">
+					<p className="pt-4">
 						© 2023 <b>Bijak Cuan</b>. All Rights Reserved.
 					</p>
 				</div>
