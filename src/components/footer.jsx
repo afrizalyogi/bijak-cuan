@@ -1,8 +1,17 @@
+import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+	faTwitter,
+	faInstagram,
+	faWhatsapp,
+	faYoutube,
+} from "@fortawesome/free-brands-svg-icons"
+
 export default function Footer() {
 	return (
 		<footer>
 			<div className="container footer-content">
-				<div className="row">
+				<div className="row justify-content-around">
 					<div className="col">
 						<h4>
 							<a className="fw-bold" href="#">
@@ -11,42 +20,63 @@ export default function Footer() {
 						</h4>
 						<p>Pelatihan Keuangan untuk Sukses Finansial</p>
 					</div>
-					<div className="col">
-						<h6>Halaman</h6>
-						<ul className="navbar-nav">
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="">Halaman</h5>
+
+						<ul class="list-unstyled mb-0">
 							<li>
-								<a href="#">Program</a>
+								<Link href="#" class="text-white">
+									Program
+								</Link>
 							</li>
 							<li>
-								<a href="#">Promo</a>
-							</li>
-						</ul>
-					</div>
-					<div className="col">
-						<h6>Komunitas</h6>
-						<ul className="navbar-nav">
-							<li>
-								<a href="#">Event</a>
-							</li>
-							<li>
-								<a href="#">Artikel</a>
+								<Link href="#" class="text-white">
+									Promo
+								</Link>
 							</li>
 						</ul>
 					</div>
-					<div className="col">
-						<h6>Hubungi Kami</h6>
-						<ul className="navbar-nav">
+
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class=" ">Komunitas</h5>
+
+						<ul class="list-unstyled">
 							<li>
-								<a href="#">Pusat Bantuan</a>
+								<Link href="#" class="text-white">
+									Event
+								</Link>
 							</li>
 							<li>
-								<a href="#">Kontak</a>
+								<Link href="#" class="text-white">
+									Artikel
+								</Link>
 							</li>
 						</ul>
 					</div>
-					<div className="col">
-						<h6>Media Sosial</h6>
-						<div className="d-flex gap-6"></div>
+
+					<div class="col-lg-2 col-md-6 mb-4  mb-md-0">
+						<h5 class=" ">Hubungi kami</h5>
+
+						<ul class="list-unstyled">
+							<li>
+								<Link href="#" class="text-white">
+									Pusat Bantuan
+								</Link>
+							</li>
+							<li>
+								<Link href="#" class="text-white">
+									Kontak
+								</Link>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 ms-5">
+						<h5 class=" ">Media Sosial</h5>
+						<FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+						<FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+						<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+						<FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
 					</div>
 				</div>
 			</div>

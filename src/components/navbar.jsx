@@ -21,7 +21,7 @@ export default function Navbar() {
 					<ul className="navbar-nav ms-auto align-items-center">
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="#">
-								Home
+								Beranda
 							</a>
 						</li>
 						<li className="nav-item">
