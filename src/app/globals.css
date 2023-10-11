@@ -9,7 +9,6 @@
 	--warning: #f4a42b;
 	--alert: #f45b6a;
 }
-
 body {
 	background-color: var(--white-primary);
 	color: var(--black-primary);
@@ -23,6 +22,9 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+nav {
+	background-color: var(--white-primary);
+}
 footer {
 	background-color: var(--secondary);
 	color: var(--white-primary);
@@ -32,6 +34,10 @@ footer .container.footer-content {
 }
 footer .border-top {
 	border-color: var(--black-secondary) !important;
+}
+.btn {
+	border-radius: 12px;
+	padding: 12px 24px;
 }
 .btn-primary {
 	background-color: var(--primary);
@@ -43,4 +49,11 @@ footer .border-top {
 .btn-outline-primary:hover {
 	background-color: var(--primary);
 	color: var(--white-primary);
+}
+.card {
+	padding: 36px;
+	border-radius: 24px;
+	background-color: var(--white-primary);
+	border-color: var(--white-secondary);
+	border-width: 2px;
 }
