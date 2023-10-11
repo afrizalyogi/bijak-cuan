@@ -60,7 +60,7 @@ export default function Program() {
 						<div className="col">
 							<NavProgram></NavProgram>
 						</div>
-						<div className="col-5">
+						<div className="col-lg-5">
 							<CardProgram></CardProgram>
 						</div>
 					</div>
