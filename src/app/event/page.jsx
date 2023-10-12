@@ -110,7 +110,6 @@ export default function Event() {
 				</div>
 				<div>
 					<h5>Mendatang</h5>
-
 					<div className="row">
 						<div className="col">
 							<div className="card">
