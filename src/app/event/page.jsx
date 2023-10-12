@@ -10,7 +10,7 @@ export default function Event() {
 		<main id="event">
 			<div className="container pt-4 pb-5">
 				<h2>Event</h2>
-				<h5>Sedang Berlangsung</h5>
+				<h5 className="pb-4 mt-4">Sedang Berlangsung</h5>
 				<div className="row row-cols-1 row-cols-md-4 g-3">
 					<div className="col">
 						<div className="card">
@@ -106,7 +106,7 @@ export default function Event() {
 						</div>
 					</div>
 				</div>
-				<h5>Mendatang</h5>
+				<h5 className="pb-4 mt-4">Mendatang</h5>
 
 				<div className="row row-cols-1 row-cols-md-4 g-3">
 					<div className="col">
