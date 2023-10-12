@@ -50,7 +50,7 @@ export default function CardProgram() {
 				</div>
 				<div id="content-benefit">
 					<h6>Benefit</h6>
-					<div>
+					<div className="d-flex flex-column gap-2">
 						<div className="d-flex gap-2">
 							<FontAwesomeIcon icon={faCircleCheck} />
 							<p>Materi Up-To-Date</p>

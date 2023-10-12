@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link"
 import { useState } from "react"
 import TentangProgram from "./content-tentang"
 import KurikulumProgram from "./content-kurikulum"
@@ -14,24 +13,21 @@ export default function NavProgram() {
 	return (
 		<section id="content-detail">
 			<div id="nav-program" className="d-flex">
-				<Link
-					href={"#"}
+				<div
 					className={`nav-item ${tab === 0 ? "active" : ""}`}
 					onClick={() => handleTabChange(0)}>
 					Tentang
-				</Link>
-				<Link
-					href={"#"}
+				</div>
+				<div
 					className={`nav-item ${tab === 1 ? "active" : ""}`}
 					onClick={() => handleTabChange(1)}>
 					Kurikulum
-				</Link>
-				<Link
-					href={"#"}
+				</div>
+				<div
 					className={`nav-item ${tab === 2 ? "active" : ""}`}
 					onClick={() => handleTabChange(2)}>
 					Alat
-				</Link>
+				</div>
 			</div>
 			<div id="content-program">
 				{tab === 0 && <TentangProgram />}
