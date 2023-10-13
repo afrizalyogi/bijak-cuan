@@ -18,9 +18,6 @@
 #benefit .col svg {
 	height: 56px;
 }
-#benefit .col p {
-	margin: 0;
-}
 #content {
 	padding: 48px 0;
 }
@@ -41,6 +38,9 @@
 }
 #program-content h4 {
 	margin-bottom: 12px;
+}
+#content-detail .nav-item {
+	cursor: pointer;
 }
 #content-paket .btn {
 	padding: 8px 24px;

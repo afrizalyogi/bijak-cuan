@@ -1,4 +1,5 @@
 import "./promo.css"
+import Link from "next/link"
 
 export const metadata = {
 	title: "Promo | Bijakcuan.",
@@ -90,24 +91,23 @@ export default function Promo() {
 				</div>
 			</div>
 			<div
-				id="cta"
-				className="row"
+				id="cta-promo"
 				style={{ backgroundImage: "url(/assets/promo/cta.png)" }}>
-				<div className="container d-flex m-auto justify-content-center gap-5">
-					<div className="col-5 p-5">
-						<picture>
-							<img src="/assets/promo/image 24.png" alt="" srcset="" />
-						</picture>
-					</div>
-					<div className="col-5 d-flex flex-column justify-content-center">
-						<p className="fa-2x fs-2 fw-bold d-flex text-white ">
-							Siapa Berkembang <br /> Bersama Bijak Cuan
-						</p>
-						<a
-							className="text-decoration-none text-white btn btn-primary rounded-2"
-							style={{ padding: "8px 30px", width: "max-content" }}>
-							Lanjut
-						</a>
+				<div className="container d-flex justify-content-center gap-5">
+					<div className="row">
+						<div className="col">
+							<picture>
+								<img src="/assets/promo/image 24.png" alt="" srcset="" />
+							</picture>
+						</div>
+						<div className="col d-flex flex-column justify-content-center">
+							<h2 className="mb-4">
+								Siapa Berkembang <br /> Bersama Bijak Cuan
+							</h2>
+							<Link href={"#content"} className="btn btn-primary">
+								Gabung Sekarang
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>

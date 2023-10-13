@@ -33,6 +33,9 @@ h6 {
 	font-weight: 700;
 	line-height: normal;
 }
+p {
+	margin: 0;
+}
 nav {
 	background-color: var(--white-primary);
 }
@@ -90,6 +93,16 @@ footer .container.footer-content {
 	border-width: 2px;
 	width: 100%;
 	height: 100%;
+}
+.card-body,
+.card-header,
+.card-footer {
+	padding: 24px;
+}
+.card-header,
+.card-footer {
+	background: none;
+	border: none;
 }
 .card img {
 	object-fit: cover;

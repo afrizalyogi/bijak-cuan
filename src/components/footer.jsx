@@ -14,7 +14,7 @@ export default function Footer() {
 				<div className="row gap-5">
 					<div className="col-lg-2">
 						<h4>
-							<a className="fw-bold" href="#">
+							<a className="fw-bold" href={"/"}>
 								Bijakcuan.
 							</a>
 						</h4>
@@ -23,22 +23,22 @@ export default function Footer() {
 					<div className="col-lg-2">
 						<h6 className="">Halaman</h6>
 						<div className="d-flex flex-column gap-2">
-							<Link href="#">Program</Link>
-							<Link href="#">Promo</Link>
+							<Link href={"/program"}>Program</Link>
+							<Link href={"/promo"}>Promo</Link>
 						</div>
 					</div>
 					<div className="col-lg-2">
 						<h6>Komunitas</h6>
 						<div className="d-flex flex-column gap-2">
-							<Link href="#">Event</Link>
-							<Link href="#">Artikel</Link>
+							<Link href={"/event"}>Event</Link>
+							<Link href={"/artikel"}>Artikel</Link>
 						</div>
 					</div>
 					<div className="col-lg-2">
 						<h6>Hubungi kami</h6>
 						<div className="d-flex flex-column gap-2">
-							<Link href="#">Pusat Bantuan</Link>
-							<Link href="#">Kontak</Link>
+							<Link href={"/bantuan"}>Pusat Bantuan</Link>
+							<Link href={"/kontak"}>Kontak</Link>
 						</div>
 					</div>
 
@@ -63,7 +63,7 @@ export default function Footer() {
 			</div>
 			<div className="border-top">
 				<div className="container">
-					<p className="pt-4">
+					<p className="pt-4 pb-2">
 						© 2023 <b>Bijak Cuan</b>. All Rights Reserved.
 					</p>
 				</div>
