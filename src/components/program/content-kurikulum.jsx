@@ -14,6 +14,7 @@ export default function KurikulumProgram() {
 				<li>Mengapa keuangan bisnis penting</li>
 				<li>Menetapkan tujuan keuangan bisnis</li>
 			</ul>
+			<br />
 			<h4>Modul 2: Mengelola Utang</h4>
 			<p>
 				<b>Pertemuan 2:</b> Jenis Utang dan Dampaknya
