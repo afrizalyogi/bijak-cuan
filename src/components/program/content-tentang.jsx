@@ -12,6 +12,7 @@ export default function TentangProgram() {
 				Artikel ini akan membahas mengapa keuangan pribadi menjadi hal yang
 				sangat penting dalam hidup kita.
 			</p>
+			<br />
 			<h4>Mengelola Utang</h4>
 			<p>
 				Banyak dari kita memiliki berbagai jenis utang, seperti utang kartu

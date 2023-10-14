@@ -10,8 +10,8 @@ export default function Promo() {
 	return (
 		<main id="promo">
 			<div className="container pt-4 pb-5">
-				<h2>Promo</h2>
-				<div className="text-center mt-4">
+				<h2 className="mb-4">Promo</h2>
+				<div className="text-center4">
 					<div className="row pb-5">
 						<div className="col-3">
 							<div className="card ">

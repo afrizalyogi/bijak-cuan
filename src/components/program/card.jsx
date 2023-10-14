@@ -4,6 +4,7 @@ import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import price from "@/data/program-price"
+import FormatCurrency from "@/components/format-currency"
 
 export default function CardProgram() {
 	const [paket, setPaket] = useState("monthly")
@@ -67,10 +68,12 @@ export default function CardProgram() {
 				</div>
 				<div id="content-price">
 					<h6>Biaya</h6>
-					<h2>{price[paket]}</h2>
+					<h2>{FormatCurrency(price[paket])}</h2>
 				</div>
 				<div id="content-checkout">
-					<Link href={"#"} className="btn btn-primary w-100">
+					<Link
+						href={`/checkout?paket=${paket}`}
+						className="btn btn-primary w-100">
 						Gabung Sekarang
 					</Link>
 				</div>

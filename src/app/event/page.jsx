@@ -9,8 +9,8 @@ export default function Event() {
 	return (
 		<main id="event">
 			<div className="container pt-4 pb-5">
-				<h2 className="mb-5">Event</h2>
-				<div className="mb-5">
+				<h2 className="mb-4">Event</h2>
+				<div className="mb-4">
 					<h5>Sedang Berlangsung</h5>
 					<div className="row">
 						<div className="col">

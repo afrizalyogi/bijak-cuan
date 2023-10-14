@@ -5,6 +5,7 @@ export default function AlatProgram() {
 				Deskripsi singkat tentang beberapa alat yang akan membantu pengelolaan
 				keuangan Anda dan akan dipelajari bersama kami:
 			</p>
+			<br />
 			<h4>Kalkulator Keuangan</h4>
 			<p>
 				Kalkulator keuangan adalah alat penting untuk perhitungan keuangan yang
@@ -13,6 +14,7 @@ export default function AlatProgram() {
 				keuangan yang lebih baik dengan memberikan perkiraan tentang berbagai
 				skenario keuangan.
 			</p>
+			<br />
 			<h4>Spreadsheet (Lembar Kerja)</h4>
 			<p>
 				Spreadsheet, seperti Microsoft Excel atau Google Sheets, dapat digunakan

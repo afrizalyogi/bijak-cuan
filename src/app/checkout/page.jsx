@@ -1,37 +1,40 @@
-export default function Checkout() {
+import "./checkout.css"
+import process from "@/components/checkout/process"
+import generateOrderId from "@/components/generate-order-id"
+import GetPaket from "@/components/checkout/get-paket"
+import CardDetail from "@/components/checkout/card-detail"
+import CardCourse from "@/components/checkout/card-course"
+import GetPaketDisplay from "@/components/checkout/get-paket-display"
+
+export default async function Checkout() {
 	return (
-		<main>
-			<div>
-				<h2>Laporan Terakhir Dapatkan Pembelajaran Impian Anda</h2>
-			</div>
-			<div className="d-flex">
-				<div className="card">
-					<div></div>
-					<h4>Bijakcuan Membership</h4>
-					<ul>
-						<li>Materi Up-To-Date</li>
-						<li>Mentor Profesional</li>
-						<li>Forum Diskusi</li>
-					</ul>
+		<main id="checkout">
+			<div className="container pt-4 pb-5">
+				<div className="row">
+					<div className="col-lg-6">
+						<h2>Laporan Terakhir Dapatkan Pembelajaran Impian Anda</h2>
+					</div>
+					<div className="col-lg-6"></div>
 				</div>
-				<div className="card">
-					<div>
-						<h6>Metode Pembayaran</h6>
+				<div className="row">
+					<div className="col-lg-6">
+						<CardCourse />
 					</div>
-					<div>
-						<h6>Kode Promo</h6>
-					</div>
-					<div>
-						<h6>Detail Pembayaran</h6>
-					</div>
-					<div className="d-flex justify-content-between">
-						<h4>Total Harga</h4>
-						<h4>Rp 88.877</h4>
-					</div>
-					<div>
-						<button className="btn btn-primary">
-							Bayar & Gabung Kelas Sekarang
-						</button>
+					<div className="col-lg-6">
+						<div className="card">
+							<CardDetail />
+							<div className="card-footer">
+								{/* <button
+									onClick={() => {
+										let orderId = generateOrderId()
+										let totalPrice = price[paket] - random - discount
+										process(orderId, totalPrice)
+									}}
+									className="btn btn-primary w-100">
+									Bayar & Gabung Kelas Sekarang
+								</button> */}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

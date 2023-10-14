@@ -92,7 +92,7 @@ footer .container.footer-content {
 	border-color: var(--white-secondary);
 	border-width: 2px;
 	width: 100%;
-	height: 100%;
+	height: fit-content;
 }
 .card-body,
 .card-header,
@@ -105,8 +105,12 @@ footer .container.footer-content {
 	border: none;
 }
 .card img {
+	border-radius: 24px;
 	object-fit: cover;
 }
 .card-body {
 	padding: 24px;
+}
+.color-info {
+	color: var(--info);
 }
