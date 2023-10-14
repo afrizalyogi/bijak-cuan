@@ -1,10 +1,7 @@
 import "./checkout.css"
-import process from "@/components/checkout/process"
-import generateOrderId from "@/components/generate-order-id"
-import GetPaket from "@/components/checkout/get-paket"
 import CardDetail from "@/components/checkout/card-detail"
 import CardCourse from "@/components/checkout/card-course"
-import GetPaketDisplay from "@/components/checkout/get-paket-display"
+import CheckoutButton from "@/components/checkout/checkout"
 
 export default async function Checkout() {
 	return (
@@ -24,15 +21,7 @@ export default async function Checkout() {
 						<div className="card">
 							<CardDetail />
 							<div className="card-footer">
-								{/* <button
-									onClick={() => {
-										let orderId = generateOrderId()
-										let totalPrice = price[paket] - random - discount
-										process(orderId, totalPrice)
-									}}
-									className="btn btn-primary w-100">
-									Bayar & Gabung Kelas Sekarang
-								</button> */}
+								<CheckoutButton />
 							</div>
 						</div>
 					</div>

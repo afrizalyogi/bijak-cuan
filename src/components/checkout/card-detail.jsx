@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import price from "@/data/program-price"
+import discountData from "@/data/checkout-discount"
 import FormatCurrency from "@/components/format-currency"
 import GetPaket from "./get-paket"
 
@@ -55,7 +56,9 @@ export default function CardDetail() {
 					</div>
 					<div className="d-flex justify-content-between">
 						<h4>Total Harga</h4>
-						<h4>{FormatCurrency(price[paket] - random - discount)}</h4>
+						<h4 id="total-harga">
+							{FormatCurrency(price[paket] - random - discount)}
+						</h4>
 					</div>
 				</div>
 			</div>
