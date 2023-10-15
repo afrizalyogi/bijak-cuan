@@ -37,11 +37,6 @@ export default async function Pembayaran() {
 								<p>Total Pembayaran</p>
 								<h2>Rp. 74.227</h2>
 							</div>
-							{/* <div className="d-flex flex-column gap-5">
-								<p>Metode Pembayaran</p>
-								<h6>Virtual Account</h6>
-								<h6>E-Wallet</h6>
-							</div> */}
 							<div className="d-flex flex-column gap-5">
 								<Link
 									href={`https://app.sandbox.midtrans.com/snap/v3/redirection/${token}`}
