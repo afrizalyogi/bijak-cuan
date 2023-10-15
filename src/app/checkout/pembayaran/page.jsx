@@ -1,3 +1,4 @@
+"use client"
 import "./pembayaran.css"
 import axios from "axios"
 import { API_SERVER } from ".env"
