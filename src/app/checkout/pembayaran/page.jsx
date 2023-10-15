@@ -1,6 +1,6 @@
 import "./pembayaran.css"
 import axios from "axios"
-import { API_SERVER } from ".env.local"
+import { API_SERVER } from ".env"
 import generateOrderId from "@/components/generate-order-id"
 import Link from "next/link"
 
