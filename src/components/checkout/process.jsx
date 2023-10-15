@@ -1,11 +1,12 @@
 import axios from "axios"
-import { useEffect } from "react"
-import { CLIENT_KEY, API_SERVER } from ".env"
+import { useRouter } from "next/navigation"
+import { CLIENT_KEY, API_SERVER } from ".env.local"
+import generateOrderId from "@/components/generate-order-id"
 
-export default async function process(order_id, total) {
+export default async function process() {
 	const data = {
-		order_id: order_id,
-		total: total,
+		order_id: generateOrderId(),
+		total: 74227,
 	}
 
 	const config = {
@@ -18,19 +19,20 @@ export default async function process(order_id, total) {
 
 	setToken(response.data.token)
 
-	useEffect(() => {
-		const myScript = document.createElement("script")
-		myScript.setAttribute(
-			"src",
-			"https://app.sandbox.midtrans.com/snap/snap.js"
-		)
-		myScript.setAttribute("data-client-key", CLIENT_KEY)
-		document.head.appendChild(myScript)
-	}, [])
+	// useEffect(() => {
+	// 	const snapScript = document.createElement("script")
+	// 	snapScript.setAttribute(
+	// 		"src",
+	// 		"https://app.sandbox.midtrans.com/snap/snap.js"
+	// 	)
+	// 	snapScript.setAttribute("data-client-key", CLIENT_KEY)
+	// 	document.head.appendChild(snapScript)
+	// }, [])
 
-	useEffect(() => {
-		if (token) {
-			window.snap.pay(token)
-		}
-	}, [token])
+	// useEffect(() => {
+	// 	if (token) {
+	// 		window.snap.pay(token)
+	// 	}
+	// }, [token])
+	return response.data.token
 }
