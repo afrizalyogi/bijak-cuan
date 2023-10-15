@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 export default function Navbar() {
 	const route = usePathname()
 	return (
-		<nav className="navbar navbar-expand-lg fixed-top">
+		<nav className="navbar navbar-expand-lg fixed-top pt-3 pb-3">
 			<div className="container">
 				<h4>
 					<Link className="navbar-brand fw-bold" href={"/"}>
