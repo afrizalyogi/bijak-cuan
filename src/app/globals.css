@@ -114,3 +114,6 @@ footer .container.footer-content {
 .color-info {
 	color: var(--info);
 }
+.form-control {
+	background-color: var(--white-secondary);
+}

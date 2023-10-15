@@ -1,12 +1,21 @@
 import "../pembayaran.css"
 import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"
 
 export default async function PembayaranSukses() {
 	return (
 		<main id="pembayaran">
 			<div className="container align-items-center d-flex justify-content-center">
 				<div className="container-lg text-center">
-					<h1>Pembayaran Sukses</h1>
+					<FontAwesomeIcon
+						icon={faCheckCircle}
+						className="mb-4"></FontAwesomeIcon>
+					<h1 className="mb-4">Pembayaran Sukses</h1>
+					<p className="mb-5 w-75 mx-auto">
+						Silahkan mempelajari materi kelas yang telah kami design dengan baik
+						untuk mencapai goals Anda
+					</p>
 					<Link href={"#"} className="btn btn-primary">
 						Mulai Belajar
 					</Link>

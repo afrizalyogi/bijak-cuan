@@ -1,9 +1,24 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react"
 
 export default function Navbar() {
 	const route = usePathname()
+	const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+	useEffect(() => {
+		const isLoggedInUser = localStorage.getItem("isLoggedIn")
+		if (isLoggedInUser) {
+			setIsLoggedIn(true)
+		}
+	}, [])
+
+	const handleLogout = () => {
+		localStorage.removeItem("isLoggedIn")
+		setIsLoggedIn(false)
+	}
+
 	return (
 		<nav className="navbar navbar-expand-lg fixed-top pt-3 pb-3">
 			<div className="container">
@@ -61,18 +76,30 @@ export default function Navbar() {
 							</Link>
 						</li>
 					</ul>
-					<ul className="navbar-nav gap-2 mt-2 mt-lg-0 align-items-center">
-						<li className="nav-item w-100">
-							<Link className="btn btn-outline-primary w-100" href={"/masuk"}>
-								Masuk
-							</Link>
-						</li>
-						<li className="nav-item w-100">
-							<Link className="btn btn-primary w-100" href={"/daftar"}>
-								Daftar
-							</Link>
-						</li>
-					</ul>
+					{isLoggedIn ? (
+						<ul className="navbar-nav gap-2 mt-2 mt-lg-0 align-items-center">
+							<li className="nav-item w-100">
+								<button
+									onClick={handleLogout}
+									className="btn btn-outline-primary w-100">
+									Keluar
+								</button>
+							</li>
+						</ul>
+					) : (
+						<ul className="navbar-nav gap-2 mt-2 mt-lg-0 align-items-center">
+							<li className="nav-item w-100">
+								<Link className="btn btn-outline-primary w-100" href={"/masuk"}>
+									Masuk
+								</Link>
+							</li>
+							<li className="nav-item w-100">
+								<Link className="btn btn-primary w-100" href={"/daftar"}>
+									Daftar
+								</Link>
+							</li>
+						</ul>
+					)}
 				</div>
 			</div>
 		</nav>
