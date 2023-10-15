@@ -1,3 +1,4 @@
+"use client"
 import "../pembayaran.css"
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
