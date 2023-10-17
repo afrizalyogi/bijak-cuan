@@ -15,66 +15,111 @@ export const metadata = {
 }
 export default function Kursus() {
 	return (
-        <main id="kursus">
-            <div className="d-flex">
-      <link href={"#"}>
-      <div className="gambar p-2">
-        <img  src="assets/kursus/Vector.jpg" className="img-fluid" alt="Gambar Responsif"/>
-    </div>
-      </link>
-    <div className="kursus p-2">
-        <p>Kursus Saya</p>
-    </div>
-  </div>
-  <div className="row">
-    <div className="col-lg-2">
-      <div className="vertical-nav">
-        <p id="title">Pengenalan Keuangan Bisnis</p>
-        <link href={"#"} className="nav-link active" aria-current="page">Intro Kursus</link>
-        <link href={"#"} className="nav-link">Pengenalan Pengelolaan Keu...</link>
-        <link href={"#"} className="nav-link">Manfaat Pengelolaan Keuangan</link>
-        <link id="bawah" href={"#"} className="nav-link">Menentukan Tujuan Keuangan</link>
-      </div>
-      <div className="card" id="vernav">
-          <p id="judul">Mengelola Hutang</p>
-          <link href={"#"} className="nav-link">Pengenalan Hutang</link>
-          <link href={"#"} className="nav-link">Jenis Hutang</link>
-          <link href={"#"} className="nav-link">Pengaruh Hutang</link>
-          <link id="bottom" href={"#"} className="nav-link">Mengatur Hutang</link>
-      </div>
-     </div>
-    
-    <div className="col-lg-8">
-      <div className="card">
-        <img src="/assets/kursus/triler.png" className="card-img-top" alt=""/>
-        <div className="card-body">
-          <div className="row align-items-center">
-              <div className="col-auto">
-                  <h5 className="card-title">Intro Kursus</h5>
-              </div>
-              <div className="col">
-                  <link id="diskusi"href={"#"} className="btn btn-outline-primary btn-sm mx-2 my-1">Group Diskusi</link>
-                  <link id="lanjut"href={"#"} className="btn btn-primary btn-sm mx-2 my-1">Selanjutnya</link>
-              </div>
-          </div>
-                <br/><p className="card-text">Apakah Anda seorang pengusaha yang ingin mengoptimalkan pengelolaan keuangan bisnis Anda? 
-                                            Atau mungkin Anda baru saja memulai usaha dan ingin memastikan bahwa Anda memiliki dasar 
-                                            yang kuat dalam mengelola finansial bisnis Anda? Apapun latar belakang Anda, kursus ini adalah tempat yang tepat untuk Anda.
-                        </p>
-                    <p className="card-text">Dalam kursus ini, Anda akan mendapatkan wawasan mendalam tentang pengelolaan 
-                                            keuangan bisnis yang efisien dan berhasil. Kami akan membahas topik-topik penting seperti perencanaan 
-                                            anggaran, analisis laporan keuangan, strategi pengelolaan kas, dan banyak lagi. Kami juga akan memberikan 
-                                            tips dan trik praktis yang akan membantu Anda mengatasi tantangan keuangan yang mungkin Anda hadapi dalam bisnis Anda.
-                        </p>
-                    <p className="card-text">Kami percaya bahwa pengelolaan keuangan yang baik adalah kunci keberhasilan bisnis, 
-                                            dan kursus ini dirancang khusus untuk membantu Anda mencapai tujuan finansial Anda. 
-                                            Bersiaplah untuk menjalani perjalanan belajar yang mendalam dan bermanfaat, 
-                                            dan bersiaplah untuk mengambil kendali penuh atas keuangan bisnis Anda.
-                            </p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </main>
-    )
+		<main id="kursus">
+			<div className="d-flex">
+				<Link href={"#"}>
+					<div className="gambar p-2">
+						<img
+							src="assets/kursus/Vector.jpg"
+							className="img-fluid"
+							alt="Gambar Responsif"
+						/>
+					</div>
+				</Link>
+				<div className="kursus p-2">
+					<p>Kursus Saya</p>
+				</div>
+			</div>
+			<div className="row">
+				<div className="col-lg-2">
+					<div className="vertical-nav">
+						<p id="title">Pengenalan Keuangan Bisnis</p>
+						<Link href={"#"} className="nav-link active" aria-current="page">
+							Intro Kursus
+						</Link>
+						<Link href={"#"} className="nav-link">
+							Pengenalan Pengelolaan Keu...
+						</Link>
+						<Link href={"#"} className="nav-link">
+							Manfaat Pengelolaan Keuangan
+						</Link>
+						<Link id="bawah" href={"#"} className="nav-link">
+							Menentukan Tujuan Keuangan
+						</Link>
+					</div>
+					<div className="card" id="vernav">
+						<p id="judul">Mengelola Hutang</p>
+						<Link href={"#"} className="nav-link">
+							Pengenalan Hutang
+						</Link>
+						<Link href={"#"} className="nav-link">
+							Jenis Hutang
+						</Link>
+						<Link href={"#"} className="nav-link">
+							Pengaruh Hutang
+						</Link>
+						<Link id="bottom" href={"#"} className="nav-link">
+							Mengatur Hutang
+						</Link>
+					</div>
+				</div>
+
+				<div className="col-lg-8">
+					<div className="card">
+						<img
+							src="/assets/kursus/triler.png"
+							className="card-img-top"
+							alt=""
+						/>
+						<div className="card-body">
+							<div className="row align-items-center">
+								<div className="col-auto">
+									<h5 className="card-title">Intro Kursus</h5>
+								</div>
+								<div className="col">
+									<Link
+										id="diskusi"
+										href={"#"}
+										className="btn btn-outline-primary btn-sm mx-2 my-1">
+										Group Diskusi
+									</Link>
+									<Link
+										id="lanjut"
+										href={"#"}
+										className="btn btn-primary btn-sm mx-2 my-1">
+										Selanjutnya
+									</Link>
+								</div>
+							</div>
+							<br />
+							<p className="card-text">
+								Apakah Anda seorang pengusaha yang ingin mengoptimalkan
+								pengelolaan keuangan bisnis Anda? Atau mungkin Anda baru saja
+								memulai usaha dan ingin memastikan bahwa Anda memiliki dasar
+								yang kuat dalam mengelola finansial bisnis Anda? Apapun latar
+								belakang Anda, kursus ini adalah tempat yang tepat untuk Anda.
+							</p>
+							<p className="card-text">
+								Dalam kursus ini, Anda akan mendapatkan wawasan mendalam tentang
+								pengelolaan keuangan bisnis yang efisien dan berhasil. Kami akan
+								membahas topik-topik penting seperti perencanaan anggaran,
+								analisis laporan keuangan, strategi pengelolaan kas, dan banyak
+								lagi. Kami juga akan memberikan tips dan trik praktis yang akan
+								membantu Anda mengatasi tantangan keuangan yang mungkin Anda
+								hadapi dalam bisnis Anda.
+							</p>
+							<p className="card-text">
+								Kami percaya bahwa pengelolaan keuangan yang baik adalah kunci
+								keberhasilan bisnis, dan kursus ini dirancang khusus untuk
+								membantu Anda mencapai tujuan finansial Anda. Bersiaplah untuk
+								menjalani perjalanan belajar yang mendalam dan bermanfaat, dan
+								bersiaplah untuk mengambil kendali penuh atas keuangan bisnis
+								Anda.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	)
 }
