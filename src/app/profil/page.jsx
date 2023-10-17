@@ -3,6 +3,7 @@ import { useState } from "react"
 import Pengaturan from '@/app/profil/pengaturan/page';
 import KursusSaya from '@/app/profil/kursus/page';
 import "./profil.css"
+import Transaksi from "./transaksi/page";
 
 export default function Profil() {
   const [activeTab, setActiveTab] = useState('kursus-saya');
@@ -71,7 +72,7 @@ export default function Profil() {
               ) : activeTab === 'transaksi' ? (
                 <div>
                   <h5 className="mb-4">Transaksi</h5>
-                
+                  <Transaksi></Transaksi>
                 </div>
               ) : activeTab === 'pusat-bantuan' ? (
                 <div>
