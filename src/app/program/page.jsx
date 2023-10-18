@@ -30,7 +30,7 @@ export default function Program() {
 					</div>
 				</div>
 			</section>
-			<section id="benefit">
+			<section id="program-benefit">
 				<div className="container">
 					<div className="row gap-5">
 						<div className="col d-flex align-items-center gap-3">

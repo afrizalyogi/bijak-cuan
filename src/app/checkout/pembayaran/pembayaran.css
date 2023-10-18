@@ -16,6 +16,9 @@
 #pembayaran svg.gagal {
 	color: var(--alert);
 }
+#pembayaran img {
+	width: 124px;
+}
 
 @media (max-width: 960px) {
 	#pembayaran .container-lg {

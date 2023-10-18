@@ -10,12 +10,12 @@
 	color: var(--white-secondary);
 	margin-bottom: 48px;
 }
-#benefit {
+#program-benefit {
 	background-color: var(--secondary);
 	color: var(--white-secondary);
 	padding: 48px 0;
 }
-#benefit .col svg {
+#program-benefit .col svg {
 	height: 56px;
 }
 #content {

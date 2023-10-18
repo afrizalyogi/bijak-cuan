@@ -1,3 +1,4 @@
+import "./event.css"
 import Link from "next/link"
 
 export const metadata = {

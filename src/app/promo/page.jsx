@@ -24,6 +24,8 @@ export default function Promo() {
 										Dapatkan diskon eksklusif dengan total 30% bagi pengguna
 										bank BCA
 									</p>
+								</div>
+								<div className="card-footer">
 									<p className="fw-bold text-sm-start">
 										Kode Promo <br />{" "}
 										<span className="fw-light">BCA30CUAN </span>{" "}
@@ -42,6 +44,8 @@ export default function Promo() {
 										Berlangganan paket lifetime onus e-book eksklusif tentang
 										pengelolaan keuangan untuk pemula.
 									</p>
+								</div>
+								<div className="card-footer">
 									<p className="fw-bold text-sm-start">
 										Kode Promo <br />{" "}
 										<span className="fw-light">EBOO72341K</span>{" "}
@@ -61,6 +65,8 @@ export default function Promo() {
 										Hemat 25% untuk pelatihan strategi mengelola utang bisnis
 										dengan lebih efektif dan hindari masalah keuangan.
 									</p>
+								</div>
+								<div className="card-footer">
 									<p className="fw-bold text-sm-start">
 										Kode Promo <br />{" "}
 										<span className="fw-light">DEBTFREE25</span>{" "}
@@ -80,6 +86,8 @@ export default function Promo() {
 										Nikmati diskon 15% untuk tiket seminar keuangan. Pelajari
 										dari para ahli keuangan tanpa harus keluar rumah.
 									</p>
+								</div>
+								<div className="card-footer">
 									<p className="fw-bold text-sm-start">
 										Kode Promo <br />{" "}
 										<span className="fw-light">SEMINAR15OFF</span>{" "}
@@ -104,7 +112,7 @@ export default function Promo() {
 							<h2 className="mb-4">
 								Siapa Berkembang <br /> Bersama Bijak Cuan
 							</h2>
-							<Link href={"#content"} className="btn btn-primary">
+							<Link href={"/program"} className="btn btn-primary">
 								Gabung Sekarang
 							</Link>
 						</div>

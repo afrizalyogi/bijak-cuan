@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
@@ -8,6 +8,14 @@ import FormatCurrency from "@/components/format-currency"
 
 export default function CardProgram() {
 	const [paket, setPaket] = useState("monthly")
+	const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+	useEffect(() => {
+		const isLoggedInUser = localStorage.getItem("isLoggedIn")
+		if (isLoggedInUser) {
+			setIsLoggedIn(true)
+		}
+	}, [])
 
 	const handlePaketChange = (paket) => {
 		setPaket(paket)
@@ -72,7 +80,7 @@ export default function CardProgram() {
 				</div>
 				<div id="content-checkout">
 					<Link
-						href={`/checkout?paket=${paket}`}
+						href={`${isLoggedIn ? `/checkout?paket=${paket}` : "/daftar"}`}
 						className="btn btn-primary w-100">
 						Gabung Sekarang
 					</Link>
