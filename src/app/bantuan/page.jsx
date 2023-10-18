@@ -133,7 +133,7 @@ export default function PusatBantuan() {
 				</div>
 			</section>
 
-			<section id="hubungi-kami">
+			<section id="kontak">
 				<div className="container py-5">
 					<h3 className="text-center mb-4">Hubungi Kami!</h3>
 					<div className="d-flex gap-4 align-items-center justify-content-center">
