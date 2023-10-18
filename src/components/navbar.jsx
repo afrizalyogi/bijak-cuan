@@ -2,6 +2,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 
 export default function Navbar() {
 	const route = usePathname()
@@ -13,11 +15,6 @@ export default function Navbar() {
 			setIsLoggedIn(true)
 		}
 	}, [])
-
-	const handleLogout = () => {
-		localStorage.removeItem("isLoggedIn")
-		setIsLoggedIn(false)
-	}
 
 	return (
 		<nav className="navbar navbar-expand-lg fixed-top pt-3 pb-3">
@@ -79,11 +76,14 @@ export default function Navbar() {
 					{isLoggedIn ? (
 						<ul className="navbar-nav gap-2 mt-2 mt-lg-0 align-items-center">
 							<li className="nav-item w-100">
-								<button
-									onClick={handleLogout}
-									className="btn btn-outline-primary w-100">
-									Keluar
-								</button>
+								<Link href={"/profil"}>
+									<FontAwesomeIcon
+										icon={faUser}
+										className={`btn ${
+											route === "/profil" ? "btn-dark" : "btn-outline-dark"
+										}`}
+									/>
+								</Link>
 							</li>
 						</ul>
 					) : (

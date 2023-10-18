@@ -38,7 +38,7 @@ export default function Footer() {
 						<h6>Hubungi kami</h6>
 						<div className="d-flex flex-column gap-2">
 							<Link href={"/bantuan"}>Pusat Bantuan</Link>
-							<Link href={"/kontak"}>Kontak</Link>
+							<Link href={"/bantuan#kontak"}>Kontak</Link>
 						</div>
 					</div>
 

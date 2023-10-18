@@ -87,7 +87,7 @@ export default function Masuk() {
 								<div className="d-grid gap mb-4">
 									<Link
 										onClick={handleLogin}
-										href={"/"}
+										href={"/profil"}
 										className="btn btn-primary">
 										Masuk
 									</Link>
